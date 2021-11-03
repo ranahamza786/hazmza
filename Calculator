@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+void calculator() {
+    int a,b,sum;
+    char oper;
+    cout << "Enter the number:";
+    cin >> a;
+    cout << "Enter the operator like (+,-,*,/,%):";
+    cin >> oper;
+    cout << "Enter the number:";
+    cin >> b;
+
+    if (oper == '+')
+    {
+        sum = a + b;
+        cout <<"Answer: " <<sum;
+
+    }
+    else if(oper == '-')
+    {
+        sum = a - b;
+        cout << "Answer: " << sum;
+    }
+    else if(oper == '*')
+    {
+        sum = a * b;
+        cout << "Answer: " << sum;
+    }
+    else if (oper == '/')
+    {
+        if (b==0)
+        {
+            cout << " Division is not Possible";
+        }
+
+        else
+        {
+            sum = a / b;
+            cout << "Answer: " << sum;
+        }
+
+    }
+    else if(oper == '%')
+    {
+        sum = a % b;
+        cout << "Answer: " << sum;
+    }
+    else cout << "entered wrong input";
+
+}
+int main()
+calculator();
+    return 0;
+
+}
